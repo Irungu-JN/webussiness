@@ -3,56 +3,187 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Website - Home</title>
+    <title>Sales Solutions - Home</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <!-- Header -->
+
+    <!-- Header Section -->
     <header>
-        <div class="logo">
-            <h1>Sales Solutions</h1>
-        </div>
+        <h1>Sales Solutions</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Section -->
-    <main>
-        <section class="hero">
-            <h2>Boost Your Sales with Proven Strategies</h2>
-            <p>Transform your business with our expert sales consulting and cutting-edge tools.</p>
-            <a href="services.html" class="cta-btn">Get Started</a>
-        </section>
+    <!-- Hero Section with Moving Text -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Unlock Your Business Potential</h2>
+            <p>Custom sales strategies tailored for your success.</p>
+            <a href="#" class="cta-btn">Get Started</a>
+        </div>
+    </section>
 
-        <section class="features">
-            <div class="feature">
+
+    <!-- About Us Section with Image Carousel -->
+    <section class="about-us">
+        <h2>About Us</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="images/about1.jpeg" alt="About Image 1">
+                <img src="images/about2.jpeg" alt="About Image 2">
+                <img src="images/about3.jpeg" alt="About Image 3">
+                <img src="images/about4.jpeg" alt="About Image 4">
+            </div>
+        </div>
+        <p>We offer over a decade of experience in providing tailored sales solutions to businesses of all sizes. Let’s
+            achieve success together.</p>
+    </section>
+
+    <!-- Services Section with Animated Icons -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="images/sales-consulting.jpg" alt="Sales Consulting" class="animated-icon">
                 <h3>Sales Consulting</h3>
-                <p>Expert advice to streamline your sales processes and increase revenue.</p>
+                <p>Expert advice and strategies to streamline your sales process.</p>
             </div>
-            <div class="feature">
+            <div class="service-card">
+                <img src="images/sales-training.jpg" alt="Sales Training" class="animated-icon">
                 <h3>Sales Training</h3>
-                <p>Workshops and training sessions to enhance your team's performance.</p>
+                <p>Training programs to boost your team’s performance.</p>
             </div>
-            <div class="feature">
+            <div class="service-card">
+                <img src="images/lead-generation.jpg" alt="Lead Generation" class="animated-icon">
                 <h3>Lead Generation</h3>
-                <p>Cutting-edge tools to help you find and convert potential customers.</p>
+                <p>Innovative tools to generate and convert leads efficiently.</p>
             </div>
-        </section>
-    </main>
+            <div class="service-card">
+                <img src="images/crm-solutions.jpg" alt="CRM Solutions" class="animated-icon">
+                <h3>CRM Solutions</h3>
+                <p>Advanced CRM tools to manage customer relationships.</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"Sales Solutions transformed our sales process and helped us increase revenue by 30%! Their expertise
+                    is
+                    unmatched."</p>
+                <h4>John Doe, CEO of XYZ Corp</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Their CRM solutions allowed us to track leads more effectively and boost conversions. Our team loves
+                    the
+                    new system!"</p>
+                <h4>Jane Smith, Marketing Director</h4>
+            </div>
+            <div class="testimonial">
+                <p>"The training programs boosted our team's performance. Sales Solutions helped our staff sharpen their
+                    skills!"</p>
+                <h4>Michael Green, Sales Manager</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Scrolling Section -->
+    <section class="parallax-section">
+        <div class="parallax-content">
+            <h2>Transform Your Business</h2>
+            <p>Unlock new opportunities with innovative strategies and expert sales solutions designed to propel your
+                business to the next level.</p>
+            <a href="#" class="glow-btn">Discover More</a>
+        </div>
+    </section>
+
+
+    <!-- Contact Section with Floating Labels -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script src="scripts/script.js"></script>
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Sales Solutions. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <!-- About Us Section -->
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>We provide innovative sales solutions to help businesses grow and thrive in the competitive
+                        market.
+                        Our mission is to empower companies with tailored strategies to increase revenue and streamline
+                        operations.</p>
+                </div>
+
+                <!-- Contact Information Section -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> contact@salesolutions.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri, 9am - 6pm</li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter and stay updated on the latest sales tips and strategies.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sales Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>
